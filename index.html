@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Name Form</title>
+  <style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #F8F8F8;
+        color: #333333;
+        text-align: center;
+    }
+
+    h1 {
+        color: orange;
+    }
+
+    form {
+        width: 50%;
+        margin: 0 auto;
+        background-color: #FFFFFF;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    label {
+        display: block;
+        margin-bottom: 5px;
+        color: orange;
+    }
+
+    input[type="text"] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #CCCCCC;
+        border-radius: 5px;
+    }
+
+    input[type="submit"], input[type="reset"] {
+        background-color: orange;
+        color: #FFFFFF;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+<h1>Details</h1>
+<form action="https://formsubmit.co/nkosiyongama@gmail.com" method="POST" enctype="text/plain">
+    <!-- Honeypot -->
+    <input type="text" name="_honey" style="display: none;">
+    <!-- Disable capcha -->
+    <input type="hidden" name"_captcha" values="false">
+  <label for="name">Name:</label>
+  <input type="text" class="form-control" name="name" id="name" size="35" maxlength="35" placeholder="Enter your name"><br><br>
+  <label for="surname">Surname:</label>
+  <input type="text" class="form-control" name="Surname" id="surname" size="35" maxlength="35" placeholder="Enter your surname"><br><br>
+  <label for="email">Email:</label>
+  <input type="text" class="form-control" name="Email" id="email" size="35" maxlength="35" placeholder="Enter your email"><br><br>
+  <label for="mobile">Mobile no:</label>
+  <input type="text" class="form-control" name="Mobile no." id="mobile" size="35" maxlength="35" placeholder="Enter your mobile number"><br><br>
+  <label for="amount">Amount fund:</label>
+  <input type="text" class="form-control" name="Amount fund" id="amount" size="35" maxlength="35" placeholder="Enter the amount"><br><br>
+  <input type="submit" value="Submit">
+  <pre><input type="reset" value="Clear Form"></pre>
+</form>
+</body>
+</html>
